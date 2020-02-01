@@ -1,0 +1,167 @@
+#scroll-animate {
+  overflow: hidden;
+}
+
+#scroll-animate-main {
+  width: 100%;
+  left: 0;
+  position: fixed;
+}
+
+#heightPage,
+#heightScroll {
+  width: 10px;
+  top: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+#heightPage {
+  left: 0;
+}
+
+#heightScroll {
+  right: 0;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background: url('./img/cerezo.jpg') no-repeat 50% 50%;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+
+nav {
+  background-color: rgb(231, 152, 225);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero {
+  margin: 0;
+  background-color: rgb(231, 152, 225);
+}
+
+.wrapper-parallax {
+  margin-top: 100%;
+  margin-bottom: 300px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Seccion de imagen de perfil */
+.circle {
+  width: 196px;
+  height: 195px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto auto;
+}
+.photo {
+  height: 100%;
+  position: relative;
+}
+.photo-container {
+  height: 100%;
+  width: 100%;
+}
+.photo-profile {
+  height: 100%;
+  width: auto;
+}
+
+/* Seccion de nombre */
+.name {
+  color: white;
+  margin: 0;
+  font-size: 2.5em;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+/* Seccion de descripcion */
+.information {
+  text-align: center;
+  background-color: blue;
+}
+
+/* Seccion social - links */
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(234, 110, 245);
+}
+.social-link {
+  display: inline;
+  width: 45px;
+  height: 45px;
+  margin: 5px 10px;
+  background-repeat: no-repeat;
+  background-size: 45px 45px;
+}
+.social-link.facebook {
+  background-image: url('./icon/facebook.svg');
+}
+.social-link.instagram {
+  background-image: url('./icon/instagram.svg');
+}
+.social-link.ko-fi {
+  background-image: url('./icon/ko-fi.svg');
+}
+.social-link.twitter {
+  background-image: url('./icon/twitter.svg');
+}
+
+/* Seccion de post */
+.post {
+  background: blueviolet;
+  padding: 1px; /* 12px */
+}
+.article-post {
+  border-radius: 7px;
+  padding: 18px;
+  margin: 15px; /* Se agrega */
+  background: #dd53ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background: gray;
+  bottom: -5px;
+  position: fixed;
+  z-index: -1;
+}
+
+header,
+footer,
+#scroll-animate-main
+{
+  -webkit-transition-property: all;
+     -moz-transition-property: all;
+      transition-property: all;
+
+  -webkit-transition-duration: 0.4s;
+     -moz-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+     -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+      transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
