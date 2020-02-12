@@ -1,36 +1,7 @@
-#scroll-animate {
-  overflow: hidden;
-}
-
-#scroll-animate-main {
-  width: 100%;
-  left: 0;
-  position: fixed;
-}
-
-#heightPage,
-#heightScroll {
-  width: 10px;
-  top: 0;
-  position: absolute;
-  z-index: 99;
-}
-
-#heightPage {
-  left: 0;
-}
-
-#heightScroll {
-  right: 0;
-}
-
 header {
   width: 100%;
-  height: 50px;
-  background: url('./img/cerezo.jpg') no-repeat 50% 50%;
+  height: 150px;
   top: 0;
-  position: fixed;
-  z-index: -1;
 }
 
 body {
@@ -42,30 +13,23 @@ nav {
   background-color: rgb(231, 152, 225);
 }
 
-.content {
-  position: relative;
-  z-index: 2;
-}
-
 .hero {
-  margin: 0;
-  background-color: rgb(231, 152, 225);
-}
-
-.wrapper-parallax {
-  margin-top: 100%;
-  margin-bottom: 300px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  /* background-color: rgb(231, 152, 225); */
 }
 
 /* Seccion de imagen de perfil */
+.circle-container {
+  /* background-color: aqua; */
+  width: 60%;
+  margin: auto;
+}
 .circle {
   width: 196px;
   height: 195px;
-  border: 3px solid #ffffff;
+  border: 3px solid #524949;
   border-radius: 50%;
   overflow: hidden;
-  margin: auto auto;
+  margin: auto;
 }
 .photo {
   height: 100%;
@@ -82,7 +46,7 @@ nav {
 
 /* Seccion de nombre */
 .name {
-  color: white;
+  color: rgb(63, 46, 46);
   margin: 0;
   font-size: 2.5em;
   font-family: 'Dancing Script', cursive;
@@ -92,7 +56,7 @@ nav {
 /* Seccion de descripcion */
 .information {
   text-align: center;
-  background-color: blue;
+  background-color: rgb(159, 159, 221);
 }
 
 /* Seccion social - links */
@@ -131,7 +95,7 @@ nav {
 }
 .article-post {
   border-radius: 7px;
-  padding: 18px;
+  padding: 16px;
   margin: 15px; /* Se agrega */
   background: #dd53ff;
   display: flex;
@@ -139,29 +103,35 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.article-details {
+  /* padding: 5px; */
+}
+.article-tittle {
+  margin: 8px 4px;
+}
+.article-date {
+  margin: 0;
+  text-align: right;
+  font-size: 12px;
+}
+.article-description {
+  margin: 9px 0 0 0;
+}
 
 footer {
   width: 100%;
-  height: 80px;
+  height: 50px;
   background: gray;
-  bottom: -5px;
-  position: fixed;
-  z-index: -1;
 }
 
-header,
-footer,
-#scroll-animate-main
-{
-  -webkit-transition-property: all;
-     -moz-transition-property: all;
-      transition-property: all;
-
-  -webkit-transition-duration: 0.4s;
-     -moz-transition-duration: 0.4s;
-      transition-duration: 0.4s;
-
-  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
-     -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
-      transition-timing-function: cubic-bezier(0, 0, 0, 1);
+.parallax {
+  height: 260px;
+  background-image: url("./img/cerezos.jpg");
+  min-height: 150px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  overflow: hidden;
+  object-fit: contain;
 }
