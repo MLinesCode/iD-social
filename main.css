@@ -16,7 +16,7 @@ nav {
 .thumbnail {
   height: 280px;
   width: 100%;
-  background-image: url("./img/cerezos.jpg");
+  /* background-image: url("./img/cerezos.jpg"); */
   min-height: 150px;
   /* background-attachment: fixed; */
   background-position: center;
@@ -42,10 +42,11 @@ nav {
 .circle {
   width: 196px;
   height: 195px;
-  border: 3px solid #524949;
+  /* border: 3px solid #524949; */
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
+  box-shadow: 1px 1px 5px #535353;
 }
 .photo {
   height: 100%;
