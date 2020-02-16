@@ -6,30 +6,22 @@ header {
 
 body {
   margin: 0;
+  color: #535353;
+  background-color: #ffd3d4;
   font-family: 'Muli', sans-serif;
 }
 
-nav {
-  background-color: rgb(231, 152, 225);
-}
-
 .thumbnail {
-  height: 280px;
+  height: 314px;
   width: 100%;
-  /* background-image: url("./img/cerezos.jpg"); */
   min-height: 150px;
-  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
   overflow: hidden;
   object-fit: cover;
   z-index: -1;
-}
-
-.hero {
-  /* margin-top: -220px; */
-  /* background-color: rgb(231, 152, 225); */
+  opacity: .95;
 }
 
 /* Seccion de imagen de perfil */
@@ -37,7 +29,7 @@ nav {
   /* background-color: aqua; */
   width: 60%;
   margin: auto;
-  margin-top: -235px;
+  margin-top: -252px;
 }
 .circle {
   width: 196px;
@@ -46,7 +38,7 @@ nav {
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
-  box-shadow: 1px 1px 5px #535353;
+  box-shadow: 1px 2px 4px #585858;
 }
 .photo {
   height: 100%;
@@ -62,10 +54,20 @@ nav {
 }
 
 /* Seccion de nombre */
+.name-container {
+  height: 55px;
+  margin: auto;
+  margin-top: 8%;
+  background-color: #ffd3d4;
+  /* opacity: .5; */
+  width: 50%;
+  border-radius: 6px;
+  box-shadow: 1px 3px 2px #f8b4b5;
+}
 .name {
   color: rgb(63, 46, 46);
   margin: 0;
-  margin-top: 35px;
+  /* margin-top: 35px; */
   font-size: 2.5em;
   font-family: 'Dancing Script', cursive;
   text-align: center;
@@ -73,8 +75,10 @@ nav {
 
 /* Seccion de descripcion */
 .information {
+  margin: 0 4%;
+  margin-top: 15px;
   text-align: center;
-  background-color: rgb(159, 159, 221);
+  background-color: #ffd3d4;
 }
 
 /* Seccion social - links */
@@ -83,7 +87,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgb(234, 110, 245);
+  /* background-color: rgb(234, 110, 245); */
 }
 .social-link {
   display: inline;
@@ -92,6 +96,8 @@ nav {
   margin: 5px 10px;
   background-repeat: no-repeat;
   background-size: 45px 45px;
+  box-shadow: 2px 2px 6px #d39b9b;
+  border-radius: 50%;
 }
 .social-link.facebook {
   background-image: url('./icon/facebook.svg');
@@ -108,21 +114,19 @@ nav {
 
 /* Seccion de post */
 .post {
-  background: blueviolet;
+  background: #ffd3d4;
   padding: 1px; /* 12px */
 }
 .article-post {
   border-radius: 7px;
   padding: 16px;
   margin: 15px; /* Se agrega */
-  background: #dd53ff;
+  background: #ffb9ba;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-.article-details {
-  /* padding: 5px; */
+  box-shadow: 1px 3px 4px #f8b4b5;
 }
 .article-tittle {
   margin: 8px 4px;
@@ -139,5 +143,13 @@ nav {
 footer {
   width: 100%;
   height: 50px;
-  background: gray;
+  background: #ffb9ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
 }
