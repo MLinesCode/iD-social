@@ -58,10 +58,13 @@ body {
   height: 55px;
   margin: auto;
   margin-top: 8%;
+  left: 0;
+  right: 0;
   background-color: #ffd3d4;
   /* opacity: .5; */
   width: 50%;
   border-radius: 6px;
+  position: absolute;
   box-shadow: 1px 3px 2px #f8b4b5;
 }
 .name {
@@ -71,12 +74,13 @@ body {
   font-size: 2.5em;
   font-family: 'Dancing Script', cursive;
   text-align: center;
+  z-index: 3;
 }
 
 /* Seccion de descripcion */
 .information {
   margin: 0 4%;
-  margin-top: 15px;
+  margin-top: 100px;
   text-align: center;
   background-color: #ffd3d4;
 }
